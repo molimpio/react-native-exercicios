@@ -7,13 +7,17 @@ import Inverter, { MegaSena } from './componentes/Multi'
 import Contador from './componentes/Contador'
 import Plataformas from './componentes/Plataformas'
 import ValidarProps from './componentes/ValidarProps'
+import Evento from './componentes/Evento'
 
 export default createDrawerNavigator({
+    Evento: {
+        screen: Evento
+    },
     ValidarProps: {
         screen: () => <ValidarProps ano={18} />
     },
     Plataformas: {
-        screen: () => <Plataformas />
+        screen: Plataformas
     },
     Contador: {
         screen: () => <Contador numeroInicial={100} />
